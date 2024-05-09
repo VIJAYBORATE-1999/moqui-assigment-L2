@@ -1,0 +1,24 @@
+<!--VIJAY3-->
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-3.xsd">
+    <service verb="find" noun="Example">
+        <in-parameters>
+            <parameter name="exampleId"/>
+        </in-parameters>
+        <out-parameters>
+            <parameter name="exampleId"/>
+            <parameter name="exampleName"/>
+            <parameter name="exampleDate"/>
+            <parameter name="examplePrice"/>
+            <parameter name="exampleQuantity"/>
+        </out-parameters>
+        <actions>
+            <entity-find-one entity-name="helloworld.vijay.Example" value-field="existing"/>
+            <set field="exampleId" from="existing.exampleId"/>
+            <set field="exampleName" from="existing.exampleName"/>
+            <set field="exampleDate" from="existing.exampleDate"/>
+            <set field="examplePrice" from="existing.examplePrice"/>
+            <set field="exampleQuantity" from="existing.exampleQuantity"/>
+        </actions>
+    </service>
+</services>
+        <!--VIJAY3-->

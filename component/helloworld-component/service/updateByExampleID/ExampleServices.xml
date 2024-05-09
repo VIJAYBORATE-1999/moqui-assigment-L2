@@ -1,0 +1,9 @@
+<!--VIJAY3-->
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-3.xsd">
+    <service verb="update" noun="Example" type="entity-auto">
+        <in-parameters>
+            <auto-parameters entity-name="helloworld.vijay.Example" include="all"/>
+        </in-parameters>
+    </service>
+</services>
+        <!--VIJAY3-->

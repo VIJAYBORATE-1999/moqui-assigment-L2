@@ -1,0 +1,13 @@
+<!--VIJAY3-->
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-3.xsd">
+    <service verb="delete" noun="Example">
+        <in-parameters>
+            <auto-parameters entity-name="helloworld.vijay.Example" include="pk"/>
+        </in-parameters>
+        <actions>
+            <entity-find-one entity-name="helloworld.vijay.Example" value-field="data"/>
+            <entity-delete value-field="data"/>
+        </actions>
+    </service>
+</services>
+        <!--VIJAY3-->

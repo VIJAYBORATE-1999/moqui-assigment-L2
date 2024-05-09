@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/rest-api-3.xsd"
+          name="exampleApi" displayName="EXAMPLE REST API'S" version="1.2.0"
+          description="VIJAY REST API ASSIGNMENT" require-authentication="anonymous-all">
+    <resource name="example" require-authentication="anonymous-all">
+        <method type="get"><service name="getAllExamples.ExampleServices.find#Example"/></method>
+        <method type="post" ><service name="createNewExample.ExampleServices.create#Example"/></method>
+        <id name="exampleId">
+            <method type="get"><service name="getAllExamplesByID.ExampleServices.find#Example"/></method>
+            <method type="put"><service name="updateByExampleID.ExampleServices.update#Example"/></method>
+            <method type="delete"><service name="DeleteExampleByID.ExampleServices.delete#Example"/></method>
+        </id>
+    </resource>
+</resource>

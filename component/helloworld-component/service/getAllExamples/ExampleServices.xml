@@ -1,0 +1,12 @@
+<!--VIJAY3-->
+<services xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://moqui.org/xsd/service-definition-3.xsd">
+    <service verb="find" noun="Example">
+        <out-parameters>
+            <parameter name="exampleList" type="list"/>
+        </out-parameters>
+        <actions>
+            <entity-find entity-name="helloworld.vijay.Example" list="exampleList"/>
+        </actions>
+    </service>
+</services>
+        <!--VIJAY3-->
